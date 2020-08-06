@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+</head>
+<body>
+    <!-- The navigationHeader icludes the image, the icons, navigation and the project name -->
+    <!--Made use of BEM (Block Element Modifier) for a better naming convention and modular approach -->
+    <header class="navigation">
+        <nav class="navigation__all">
+           <div class="navigation__img"> <img src="https://photos.angel.co/startups/i/103168-823167f85546e83f40ee62133b410587-medium_jpg.jpg?buster=1341825669" alt="" style="width: 120px; height: 120px;" > </div>
+           <div class="navigation__group">
+             <input type="text" placeholder="Add project name">
+                <ul class="navigation__list">
+                    <li class="navigation__items--active">Tasks</li>
+                    <li class="navigation__items">Calendar</li>
+                    <li class="navigation__items">Board</li>
+                    <li class="navigation__items">Grant chart</li>
+                    <li class="navigation__items">Timesheet</li>
+                    <li class="navigation__items">Expenses</li>
+                </ul>
+            </div>
+            <div class="navigation__icons">
+                <!-- icons -->
+                <span class="iconify bell" data-inline="false" data-icon="clarity:notification-solid-badged" style="color: white;"></span>
+                <span class="iconify" data-inline="false" data-icon="wpf:message" style="color: white;"></span>
+                <img src="./Images/background-color-before-1200px.jpg" alt="" class="avatar">
+                <div  class="navigation__icons--name">Temi Cole </div>
+                <span class="iconify" data-inline="false" data-icon="eva:settings-2-outline" style="color: white;"></span>
+            </div>
+        </nav>  
+    </header>
+
+    <main class="flexcontainer">
+       
+        <!-- Side navbar with icons and text -->
+        <div class="inner__sidenav ">
+            <div class="inner__sidenavflex">
+        <div class="sidenav__Dashboard">
+            <span class="iconify" data-inline="false" data-icon="bx:bxs-dashboard" style="color: #666663; font-size: 22px;"></span>
+            <div class="sidenav__text"><span>Dashboard</span></div>
+        </div>
+        <div class="sidenav__Upload">
+            <span class="iconify" data-inline="false" data-icon="bi:cloud-upload" style="color: black; font-size: 22px;"></span>
+            <div class="sidenav__text" ><span >Upload</span></div>
+        </div>
+        <div class="sidenav__Teams">
+            <span class="iconify" data-inline="false" data-icon="octicon:people-24" style="color: black; font-size: 22px;"></span>
+            <div class="sidenav__text" ><span>Teams</span></div>
+        </div>
+        <div class="sidenav__project">
+            <span class="iconify" data-inline="false" data-icon="codicon:file-submodule" style="color: black; font-size: 22px;"></span>
+            <div class="sidenav__text"><span> project </span></div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="container">
+        <!-- main grid header describing the content according to there columns  -->
+         <div class="description">
+        <div class="description__icons--modified"> 
+            <span class="iconify" data-inline="false" data-icon="bi:plus" style="color: rgb(214, 24, 24);"></span>
+            <span style="color: rgb(214, 24, 24);"> ADD A TASK </span>
+        </div>
+        <div class="description__tasks">NAME</div>
+        <div class="description__assignee">ASSIGNEE</div>
+        <div class="description__activity--">START DATE</div>
+        <div class="description__duedate--modifiedabit">DUE DATE</div>
+        <div class="description__priority--modifiedleftmargin">PRIORITY</div>
+        <div class="description__review--modifiedleftmargin">STATUS</div>
+        <div class="description__resources--modifiedleftmargin">RESOURCES</div>
+    </div>
+
+        <!-- main grid layout with all it content -->
+        <!-- Design Project -->
+        <div class="project">
+            <div class="project__icons--modified"> 
+                <input type="checkbox" style="width: 21px; height: 21px;">
+                <span class="iconify" data-inline="false" data-icon="cil:hamburger-menu" style="color: #6B6A6A;"></span>
+            </div>
+            <div class="project__tasks">Design project</div>
+            <div class="project__assignee">Davidadedeji<br>@gmail.com</div>
+            <div class="project__activity">July 31,2020</div>
+            <div class="project__duedate">Aug 2, 2020</div>
+            <div class="project__priority--red"><span class="iconify" data-inline="false" data-icon="dashicons:flag"></span></div>
+            <div class="project__review--approved">Approved</div>
+            <div class="project__resources">Figma UI Kit</div>
+        </div>
+
+        <!-- Ccreating Business Plan project -->
+        <div class="project">
+            <div class="project__icons--modified">  
+                <input type="checkbox" style="width: 21px; height: 21px;">
+                <span class="iconify" data-inline="false" data-icon="cil:hamburger-menu" style="color: #6B6A6A;"></span>
+            </div>
+            <div class="project__tasks">Creating Business Plan</div>
+            <div class="project__assignee">Prowork<br>@gmail.com</div>
+            <div class="project__activity">July 31,2020</div>
+            <div class="project__duedate">Tue</div>
+            <div class="project__priority--green"><span class="iconify" data-inline="false" data-icon="dashicons:flag" ></span></div>
+            <div class="project__review--inreview">In review</div>
+            <div class="project__resources">Google docs file</div>
+        </div>
+
+        <!-- Stakeholder meeting -->
+        <div class="project">
+            <div class="project__icons--modified">
+                <input type="checkbox" style="width: 21px; height: 21px;">
+                <span class="iconify" data-inline="false" data-icon="cil:hamburger-menu" style="color: #6B6A6A;"></span>
+            </div>
+            <div class="project__tasks">Stakeholder Meeting</div>
+            <div class="project__assignee--icons"><span class="iconify" data-inline="false" data-icon="ant-design:user-add-outlined" style="color: black;"></span></div>
+            <div class="project__activity">Aug 1, 2020</div>
+            <div class="project__duedate">Mon</div>
+            <div class="project__priority--yellow"><span class="iconify" data-inline="false" data-icon="dashicons:flag" ></span></div>
+            <div class="project__review--inreview">In review</div>
+            <div class="project__resources">Questionnaire</div>
+        </div>
+
+        <!-- A/B Ttesting Project -->
+        <div class="project">
+            <div class="project__icons--modified">
+                <input type="checkbox" style="width: 21px; height: 21px;">
+                <span class="iconify" data-inline="false" data-icon="cil:hamburger-menu" style="color: #6B6A6A;"></span>
+            </div>
+            <div class="project__tasks">A/B  Testing</div>
+            <div class="project__assignee">Mobniagroup<br>@gmail.com</div>
+            <div class="project__activity">Sept 18,2020</div>
+            <div class="project__duedate">Sat</div>
+            <div class="project__priority--red"><span class="iconify" data-inline="false" data-icon="dashicons:flag" ></span></div>
+            <div class="project__review--inprogress">In progress</div>
+            <div class="project__resources">Figma prototype</div>
+        </div>
+
+        <!-- Webinar -->
+        <div class="project">
+            <div class="project__icons--modified">
+                <input type="checkbox" style="width: 21px; height: 21px;">
+                <span class="iconify" data-inline="false" data-icon="cil:hamburger-menu" style="color: #6B6A6A;"></span>
+            </div>
+            <div class="project__tasks">Webinar</div>
+            <div class="project__assignee--icons"><span class="iconify" data-inline="false" data-icon="ant-design:user-add-outlined" style="color: black;"></span></div>
+            <div class="project__activity">July 31,2020</div>
+            <div class="project__duedate">Aug 5, 2020</div>
+            <div class="project__priority--green"><span class="iconify" data-inline="false" data-icon="dashicons:flag"></span></div>
+            <div class="project__review--approved">Approved</div>
+            <div class="project__resources">Google presentation slides</div>
+        </div>
+
+        <!-- User Research Project -->
+        <div class="project">
+            <div class="project__icons--modified">
+                <input type="checkbox" style="width: 21px; height: 21px;">
+                <span class="iconify" data-inline="false" data-icon="cil:hamburger-menu" style="color: #6B6A6A;"></span>
+            </div>
+            <div class="project__tasks">User Research</div>
+            <div class="project__assignee">Kunleogumefun<br>@gmail.com</div>
+            <div class="project__activity">July 20,2020</div>
+            <div class="project__duedate">Sept 2, 2020</div>
+            <div class="project__priority--red"><span class="iconify" data-inline="false" data-icon="dashicons:flag"></div>
+            <div class="project__review--inreview">In review</div>
+            <div class="project__resources">Surveys</div>
+        </div>
+    
+    </div>
+
+    <div class="contact">
+        <div class="contact__phone">
+            <span class="iconify" data-inline="false" data-icon="el:phone-alt" style="color: black;"></span>
+        </div>
+        <div class="contact__whatsapp">
+            <span class="iconify" data-inline="false" data-icon="logos:whatsapp"></span>
+        </div>
+        
+    </div>
+   
+    </main>
+</body>
+</html>

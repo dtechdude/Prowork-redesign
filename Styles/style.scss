@@ -1,0 +1,39 @@
+// Made use of the import feature from saas to bring in styles created in other files
+@import "./header";
+@import "./variables";
+@import "./contact";
+
+
+:root {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #EEEEEE;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #484848;
+    margin: 0;
+}
+
+body * + * {
+    margin-top: 1.5em;
+}
+
+// Made use of flexbox to divide the main section into two columns
+// I am importing it from other files in order to make the code more readable
+.flexcontainer{
+    display: flex;
+    @import "./sidebar";
+    @import "./main";
+
+}
+
+

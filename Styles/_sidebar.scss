@@ -1,0 +1,106 @@
+// Made use of the import feature from saas to bring in styles created in other files
+@import "./variables";
+
+// Made use of BEM (Block Element Modifier) for a better naming convention and modular css
+// Made use of saas to nest the styles and create variables
+.inner__sidenav {
+  
+    background-color: $sidenavBackgroundcolor;
+   
+    // made use of flexbox to change the direction of the sidebar from row to column
+    
+    .inner__sidenavflex {
+        display: flex;
+        flex-direction: column;
+        
+        // styling each icon and text
+        .sidenav__Dashboard {
+            padding-top: 35px;
+            padding-bottom: 35px;
+            padding-right: 18px;
+            border-radius: 10px;
+            background-color: #FCFCFC;
+         
+            .iconify {
+                margin-left: 1.7em;
+                font-size: 35px;   
+            }
+        
+            .sidenav__text {
+                margin-left: 1.1em;
+                font-size: 0.87em;
+                margin-top: 0;
+                
+            }
+        }
+
+        .sidenav__Upload {
+            padding-top: 35px;
+            padding-bottom: 35px;
+            padding-right: 18px;
+            border-radius: 10px;
+            background-color: #FCFCFC;
+            
+            
+            .iconify {
+                margin-left: 1.5em;
+                font-size: 35px;   
+            }
+        
+            .sidenav__text {
+                margin-left: 1.8em;
+                font-size: 0.87em;
+                margin-top: 0;
+                
+            } 
+        
+        }
+
+
+        .sidenav__Teams {
+            padding-top: 35px;
+            padding-bottom: 35px;
+            padding-right: 18px;
+            border-radius: 10px;
+            background-color: #FCFCFC;
+            
+            
+            .iconify {
+                margin-left: 1.5em;
+                font-size: 35px;   
+            }
+        
+            .sidenav__text {
+                margin-left: 1.8em;
+                font-size: 0.87em;
+                margin-top: 0;
+                
+            }
+        
+        }
+
+        .sidenav__project {
+            padding-top: 35px;
+            padding-bottom: 35px;
+            padding-right: 18px;
+            border-radius: 10px;
+            background-color: #FCFCFC;
+            
+            
+            .iconify {
+                margin-left: 1.5em;
+                font-size: 35px;   
+            }
+        
+            .sidenav__text {
+                margin-left: 1.8em;
+                font-size: 0.87em;
+                margin-top: 0;
+                
+            }
+        
+        }
+
+        }
+
+}

@@ -1,0 +1,230 @@
+// Made use of the import feature from saas to bring in variable created in another file
+@import "./variables";
+
+
+
+.container {
+
+    padding-left: 5px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 14px;
+    margin-right: 21px;
+    // styling description heading
+    // Made use of BEM (Block Element Modifier) for a better naming convention and modular css
+    // Made use of saas to nest the styles and create variables
+    .description {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        margin-left: 40px;
+        font-weight:bold;
+        justify-content: space-between;
+
+        .description__icons--modified {
+            margin-top: 24px
+        }
+    
+        .description__duedate--modifiedleftmargin {
+            margin-left: 5px;
+        }
+
+        .description__priority--modifiedleftmargin {
+            margin-left: $modifiedleftmargin;
+        }
+
+        .description__review--modifiedleftmargin {
+            margin-left: $modifiedleftmargin;
+        }
+        .description__resources--modifiedleftmargin {
+            margin-left: $modifiedleftmargin;
+        }
+    }
+
+    //styling the main content with a grid layout
+    .project {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, auto);
+    max-width: 1294px;
+    margin: 0 auto;
+    border: 1.07px solid #8B8888;
+    padding: $rowTopandBottomPadding;
+    background-color: #FFFFFF;
+    
+    
+    .project__icons {
+        margin-top: 24px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: center;
+
+        // this also means .project__icons--modified
+        &--modified {
+            text-align: center;
+            font-size: 21px;
+                 
+        }
+
+        input.checkbox {
+            width: 21px;
+            height: 21px; 
+        }
+        
+    }
+
+    .project__tasks {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: center;
+    }
+
+    .project__assignee {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        text-align: center;
+
+        // made use of the modifier attributes from BEM to add a variation/change to the styling
+        &--icons {
+            font-size: 21px;
+            text-align: center;
+            margin-top: 25px;
+        }
+       
+    }
+
+    .project__activity{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        text-align: center;
+    }
+
+    .project__duedate {
+        grid-column: 5/6;
+        grid-row: 1/2;
+        text-align: center;
+    }
+
+    .project__priority {
+        grid-column: 6/7;
+        grid-row: 1/2;
+        text-align: center;
+        
+        // styling the priority icons
+        %project__priority--red {
+            color: $primaryiconcolor;
+            text-align: center;
+            font-size: 21px;
+            margin-top: 25px;
+        }
+
+        &--green {
+            color: $secondaryiconcolor;
+            @extend  %project__priority--red;
+        }
+
+        &--yellow {
+            color: $tertiaryiconcolor;
+            color: $primaryiconcolor;
+            text-align: center;
+            font-size: 21px;
+            margin-top: 25px;
+        }
+
+        &--red {
+            color: $primaryiconcolor;
+            color: $primaryiconcolor;
+            text-align: center;
+            font-size: 21px;
+            margin-top: 25px;
+        }
+
+        &--green {
+            color: $secondaryiconcolor;
+            text-align: center;
+            font-size: 21px;
+            margin-top: 25px;
+        }
+
+        &--red {
+            color: $primaryiconcolor;
+            text-align: center;
+            font-size: 21px;
+            margin-top: 25px;
+        }
+    }
+
+    .project__review {
+        grid-column: 7/8;
+        grid-row: 1/2;
+        text-align: center;
+        
+        
+        // styling the status section
+        &--approved {
+            background-color: $approved;
+            border-radius: 10px;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        &--inreview {
+            background-color: $inreview;
+            border-radius: 10px;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        &--inreview {
+            background-color: $inreview;
+            border-radius: 10px;
+            color: white;
+            padding: 5px;
+        }
+
+        &--inprogress {
+            background-color: $inprogress;
+            border-radius: 10px;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px; 
+        }
+
+        &--approved {
+            background-color: $approved;
+            border-radius: 10px;
+            color: white;
+            padding: 5px;
+        }
+
+        &--inreview {
+            background-color: $inreview;
+            border-radius: 10px;
+            color: white;
+            padding: 5px;
+        }
+        
+    }
+
+    .project__resources {
+        grid-column: 8/9;
+        grid-row: 1/2;
+        text-align: center;
+    }
+       
+ }
+
+}

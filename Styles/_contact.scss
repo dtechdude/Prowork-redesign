@@ -1,0 +1,18 @@
+.contact {
+    flex-direction: column;
+    position: absolute;
+    right: -1em;
+    bottom: -10em;
+    .contact__phone {
+        .iconify {
+            font-size: 30px;
+        }
+    }
+
+    .contact__whatsapp {
+        .iconify{
+            font-size: 36px;
+        }
+    }
+    
+}

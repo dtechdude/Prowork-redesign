@@ -1,0 +1,98 @@
+// Made use of the import feature from saas to bring in variable created in another file
+@import "./variables";
+
+// styling the header
+.navigation {
+    background-color: $headerBackgroundcolor;
+    width: 1356px;
+    max-height: auto;
+    margin-top: 0;
+
+    // Also means navigation__all
+    &__all {
+        display: flex;
+        margin-top: 0;
+    }
+    
+    &__image {
+        flex: 2;
+    }
+
+    .navigation__group {
+        flex: 2;
+        margin-left: 30px;
+        
+    }
+
+   
+        
+     input[type=text] {
+        font-weight: bold;
+        color: $headertextcolor;
+        font-size: 24px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #FFFFFF;
+        max-width: 8.833em;    
+        }
+
+        ::placeholder {
+            color: #b8b8b8;
+        }
+
+    .navigation__list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-left: 0;
+    }
+
+    .navigation__items {
+        margin-top: 0;
+        color: $headertextcolor;
+        list-style: none;
+        margin-left: 1.5em;
+
+        &--active {
+            color: $headertextcolor;
+            list-style: none;
+            margin-top: 0;
+            border-bottom: 2px solid white;
+        }
+    }
+
+    &__icons {
+        flex: 1;
+        display: flex;
+        margin-top: 1.5em;
+        
+
+        .iconify {
+            margin-left: 40px;
+            font-size: 16px;
+        }
+
+        .bell {
+            margin-left: 40px;
+            margin-top: 24px;
+        }
+
+        .avatar { vertical-align: middle;
+            width: 25px;
+            height: 25px;
+            margin-left: 40px;
+            border-radius: 50%;
+
+        }
+       
+        .navigation__icons--name {
+            color: $headertextcolor;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
+   
+}
+
